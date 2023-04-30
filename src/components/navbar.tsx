@@ -9,15 +9,15 @@ export const Navbar: React.FC = () => {
 
     return (
         <>
-            <div className="relative flex md:items-center bg-lightGreen px-2 md:px-8 py-2 md:py-6 justify-between mx-auto">
+            <div className="relative flex md:items-center bg-lightGreen  px-2 md:px-8 py-2 md:py-6 justify-between mx-auto">
                 <div>
-                    <p className="text-xl md:text-2xl font-bold text-poppins text-normal">
+                    <p className="text-xl md:text-2xl font-bold text-poppins text-normal top-2 mb-3 relative">
                         Design<span className="text-orange">AGENCY</span>
                     </p>
                 </div>
 
                 <div>
-                    <ul className="hidden md:inline-flex gap-x-8 text-poppins items-center font-medium md:text-small ">
+                    <ul className="hidden md:inline-flex gap-x-8 text-poppins items-center font-medium md:text-small">
                         <li>Services</li>
                         <li>About Us</li>
                         <li>Contact Us</li>
@@ -28,9 +28,9 @@ export const Navbar: React.FC = () => {
 
 
                 {toggle ?
-                    <div onClick={handleClick} className="z-20 md:hidden">&#128473;</div>
+                    <div onClick={handleClick} className="z-20 md:hidden top-2 relative">&#128473;</div>
                     :
-                    <div className="z-10 md:hidden" onClick={handleClick}>&#9776;</div>
+                    <div className="z-10 md:hidden top-2 relative" onClick={handleClick}>&#9776;</div>
                 }
 
                 {toggle &&
